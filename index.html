@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hegra - Platform Event Terintegrasi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'hegra-turquoise': '#4b998e', // New Green (was hegra-turquoise)
+            'hegra-yellow': '#ebaf4c',    // New Yellow
+            'hegra-navy': '#18093b',      // New Violet (was hegra-navy & hegra-deep-navy)
+            'hegra-white': '#feffff',     // New White
+            'hegra-deep-navy': '#18093b',  // New Violet
+            'hegra-light-bg': '#feffff',   // New White
+            'hegra-card-bg': '#feffff',   // New White (cards on white background)
+            'hegra-gradient-start': '#4b998e', // New Green
+            'hegra-gradient-mid': '#ebaf4c',   // New Yellow
+            'hegra-gradient-end': '#ebaf4c',   // New Yellow
+            'hegra-chino': '#d0cea9',        // New Chino // <<< COMMA ADDED HERE
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+            'fade-in': 'fadeIn 0.8s ease-out forwards',
+            'slide-in-left': 'slideInLeft 0.8s ease-out forwards',
+            'glow': 'glow 2s infinite alternate',
+            'slow-spin': 'spin 20s linear infinite',
+            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'hero-bg-pan': 'heroBgPan 15s ease infinite alternate',
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            slideInLeft: {
+              '0%': { opacity: '0', transform: 'translateX(-30px)' },
+              '100%': { opacity: '1', transform: 'translateX(0)' },
+            },
+            glow: { // Glow will use the new yellow from hegra-yellow
+              '0%': { boxShadow: '0 0 5px theme(colors.hegra-yellow), 0 0 10px theme(colors.hegra-yellow)' },
+              '100%': { boxShadow: '0 0 15px theme(colors.hegra-yellow / 0.8), 0 0 25px theme(colors.hegra-yellow / 0.8)' },
+            },
+            heroBgPan: {
+              '0%': { backgroundPosition: '0% 50%' },
+              '100%': { backgroundPosition: '100% 50%' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="animations.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@^19.0.0/client",
+    "lucide-react": "https://esm.sh/lucide-react@^0.487.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.4.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "@tailwindcss/browser": "https://esm.sh/@tailwindcss/browser@^4.1.10",
+    "remark-gfm": "https://esm.sh/remark-gfm@^4.0.1",
+    "react-dropzone": "https://esm.sh/react-dropzone@^14.3.8",
+    "react-markdown": "https://esm.sh/react-markdown@^10.1.0",
+    "@monaco-editor/react": "https://esm.sh/@monaco-editor/react@^4.7.0",
+    "@/HegraApp": "./HegraApp.tsx",
+    "@/pages/LandingPage": "./pages/LandingPage.tsx",
+    "@/pages/EventPage": "./pages/EventPage.tsx",
+    "@/pages/CheckoutPage": "./pages/CheckoutPage.tsx",
+    "jspdf": "https://esm.sh/jspdf@^2.5.1",
+    "html2canvas": "https://esm.sh/html2canvas@^1.4.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="font-sans bg-hegra-light-bg text-hegra-deep-navy">
+  <div id="root"></div>
+  <script type="module" src="index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

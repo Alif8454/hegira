@@ -1,0 +1,83 @@
+:root {
+  --hegra-gradient-start: #4b998e; /* New Green */
+  --hegra-gradient-mid: #ebaf4c;   /* New Yellow */
+  --hegra-gradient-end: #ebaf4c;   /* New Yellow */
+  --hegra-deep-navy: #18093b;      /* New Violet (for text & dark elements) */
+  --hegra-light-bg: #feffff;       /* New White (for page background) */
+  --hegra-yellow-accent: #ebaf4c;   /* New Yellow */
+  --hegra-turquoise-accent: #4b998e; /* New Green */
+  --hegra-chino: #d0cea9;           /* New Chino */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--hegra-light-bg);
+  color: var(--hegra-deep-navy);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; /* Prevent horizontal scroll from animations */
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #e0e0e0; /* Lighter track - can be updated to a chino variant if needed */
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, var(--hegra-gradient-start), var(--hegra-gradient-mid));
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, var(--hegra-gradient-mid), var(--hegra-gradient-end));
+}
+
+.hero-slider-dots button.active { 
+  background-color: var(--hegra-turquoise-accent); /* Changed to turquoise */
+  transform: scale(1.2);
+}
+
+.event-card-category-b2c {
+  background: linear-gradient(45deg, var(--hegra-gradient-start), var(--hegra-gradient-mid));
+  color: var(--hegra-deep-navy); /* Dark text for light gradient */
+}
+.event-card-category-b2b {
+  background-color: var(--hegra-deep-navy); /* Violet */
+  color: var(--hegra-light-bg); /* White text */
+}
+.event-card-category-b2g {
+  background-color: var(--hegra-yellow-accent); /* Solid Yellow */
+  color: var(--hegra-deep-navy); /* Violet text */
+}
+
+/* Gradient text utility */
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, var(--hegra-gradient-start), var(--hegra-gradient-mid), var(--hegra-gradient-end));
+}
+
+
+/* Section title styling */
+.section-title {
+  @apply text-3xl md:text-4xl lg:text-5xl font-bold text-hegra-deep-navy mb-4 text-center;
+}
+.section-subtitle {
+  @apply text-lg text-gray-600 max-w-2xl mx-auto text-center mb-10 md:mb-16; /* text-gray-600 might need to become a chino variant if too cool */
+}
+
+/* Glassmorphism effect for elements like Navbar (optional) */
+.glassmorphic {
+  background: rgba(255, 255, 255, 0.1); /* Adjust alpha for more/less transparency */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
