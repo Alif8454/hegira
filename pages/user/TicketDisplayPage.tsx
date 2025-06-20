@@ -4,8 +4,8 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React, { useState } from 'react';
-import { TransactionData, PageName, formatEventTime } from '../HegraApp';
-import Logo from '../components/Logo';
+import { TransactionData, PageName, formatEventTime } from '../../HegraApp';
+import Logo from '../../components/Logo';
 import { QrCode, Download, ArrowLeft, Mail, Phone, CalendarDays, MapPin, Ticket as TicketLucide, User, Facebook, Twitter, Instagram, Linkedin, Loader2, Clock } from 'lucide-react';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';

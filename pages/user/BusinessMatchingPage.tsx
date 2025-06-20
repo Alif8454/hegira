@@ -3,9 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React, { useState, useMemo } from 'react';
-import BusinessMatchingCard from '../components/BusinessMatchingCard';
+import BusinessMatchingCard from '../../components/BusinessMatchingCard';
 import { Search, ChevronLeft, ChevronRight, Briefcase as BriefcaseIcon, MapPin as LocationIcon, DollarSign, ChevronDown, ChevronUp } from 'lucide-react';
-import { PageName } from '../HegraApp';
+import { PageName } from '../../HegraApp';
 
 // Sample data for cards - can be expanded or fetched
 const sampleVendors = [

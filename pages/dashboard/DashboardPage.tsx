@@ -3,9 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React, { useState } from 'react';
-import { UserRole, PageName, EventData } from '../HegraApp';
+import { UserRole, PageName, EventData } from '../../HegraApp';
 import { Bookmark, Ticket as TicketIconLucide, BarChart2, Settings, PlusCircle, LogOut, LayoutDashboard, Edit3, Users } from 'lucide-react'; // Renamed Ticket to avoid conflict
-import EventCard from '../components/EventCard';
+import EventCard from '../../components/EventCard';
 
 // Sample Data (replace with actual data fetching)
 const sampleSavedEvents: EventData[] = [

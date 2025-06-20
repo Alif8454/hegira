@@ -4,8 +4,8 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
-import { CheckoutInfo, PageName, TransactionFormData, EventData, formatEventTime } from '../HegraApp';
-import ConfirmationModal from '../components/ConfirmationModal'; 
+import { CheckoutInfo, PageName, TransactionFormData, EventData, formatEventTime } from '../../HegraApp';
+import ConfirmationModal from '../../components/ConfirmationModal'; 
 import { CalendarDays, MapPin, Ticket as TicketIcon, User, Mail, Phone, CreditCard, ShoppingCart, ArrowLeft, Tag, Users, Calendar, Clock } from 'lucide-react';
 
 // Helper function to format currency

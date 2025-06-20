@@ -3,11 +3,11 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React, { useEffect, useRef } from 'react';
-import HeroSlider from '../components/HeroSlider';
-import EventCard from '../components/EventCard';
+import HeroSlider from '../../components/HeroSlider';
+import EventCard from '../../components/EventCard';
 // import BusinessMatchingCard from '../components/BusinessMatchingCard'; // Removed import
 import { Briefcase, CalendarDays, BarChart3, Users, Mail, TrendingUp, Zap, ShieldCheck, Search, Lightbulb, Link2, CheckCircle, SpeakerIcon, Heart, TrendingUpIcon, CalendarCheck2, Headset, LayoutGrid, Ticket as TicketIcon } from 'lucide-react'; 
-import { PageName, EventData } from '../HegraApp';
+import { PageName, EventData } from '../../HegraApp';
 
 // Sample data for cards - updated to EventData structure
 const sampleEventsLanding: EventData[] = [

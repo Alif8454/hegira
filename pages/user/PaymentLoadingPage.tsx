@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React, { useEffect } from 'react';
-import { CheckoutInfo, PageName } from '../HegraApp';
-import LoadingSpinner from '../components/LoadingSpinner';
+import { CheckoutInfo, PageName } from '../../HegraApp';
+import LoadingSpinner from '../../components/LoadingSpinner';
 import { ArrowLeft } from 'lucide-react';
 
 interface PaymentLoadingPageProps {

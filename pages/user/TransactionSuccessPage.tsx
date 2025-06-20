@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React, { useState, useEffect } from 'react';
-import { TransactionData, PageName, formatEventTime } from '../HegraApp';
+import { TransactionData, PageName, formatEventTime } from '../../HegraApp';
 import { CheckCircle, QrCode, Mail, MessageCircle as WhatsAppIcon, Phone, CalendarDays, MapPin, User, Info, Download, Home as HomeIcon, X, Ticket, Eye, Clock } from 'lucide-react';
 
 // Helper function to format currency

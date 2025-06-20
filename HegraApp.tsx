@@ -4,18 +4,18 @@
 */
 import React, { useState, useCallback, useEffect } from 'react';
 import Navbar from './components/Navbar';
-import LandingPage from './pages/LandingPage';
-import EventPage from './pages/EventPage';
+import LandingPage from './pages/user/LandingPage';
+import EventPage from './pages/user/EventPage';
 // import BusinessMatchingPage from './pages/BusinessMatchingPage'; // Removed
-import HelpPage from './pages/HelpPage';
+import HelpPage from './pages/user/HelpPage';
 import Footer from './components/Footer';
-import LoginPage from './pages/LoginPage';
-import DashboardPage from './pages/DashboardPage';
-import EventDetailPage from './pages/EventDetailPage';
-import CheckoutPage from './pages/CheckoutPage';
-import PaymentLoadingPage from './pages/PaymentLoadingPage'; // New
-import TransactionSuccessPage from './pages/TransactionSuccessPage'; // New
-import TicketDisplayPage from './pages/TicketDisplayPage'; // New
+import LoginPage from './pages/user/LoginPage';
+import DashboardPage from './pages/dashboard/DashboardPage';
+import EventDetailPage from './pages/user/EventDetailPage';
+import CheckoutPage from './pages/user/CheckoutPage';
+import PaymentLoadingPage from './pages/user/PaymentLoadingPage'; // New
+import TransactionSuccessPage from './pages/user/TransactionSuccessPage'; // New
+import TicketDisplayPage from './pages/user/TicketDisplayPage'; // New
 import ConfirmationModal from './components/ConfirmationModal'; // New
 import FloatingHelpButton from './components/FloatingHelpButton'; // New
 import Home from './Home';

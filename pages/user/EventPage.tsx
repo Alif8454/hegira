@@ -3,9 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React, { useState, useMemo } from 'react';
-import EventCard from '../components/EventCard';
+import EventCard from '../../components/EventCard';
 import { Search, ChevronLeft, ChevronRight, Filter as FilterIcon, ChevronDown, ChevronUp } from 'lucide-react'; 
-import { EventData, PageName } from '../HegraApp';
+import { EventData, PageName } from '../../HegraApp';
 
 // Sample data for cards - updated to EventData structure
 const sampleEventsData: EventData[] = [

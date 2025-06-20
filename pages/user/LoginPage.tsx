@@ -3,9 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React from 'react';
-import Logo from '../components/Logo';
+import Logo from '../../components/Logo';
 import { X, User, Briefcase } from 'lucide-react';
-import { UserRole } from '../HegraApp';
+import { UserRole } from '../../HegraApp';
 
 interface LoginPageProps {
   isOpen: boolean;
